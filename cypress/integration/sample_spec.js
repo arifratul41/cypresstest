@@ -17,7 +17,6 @@ describe('My First Test', () => {
         .select('litres')
     cy.contains("Calculate")
         .click()
-
     cy.get("#USFuelEfficiency")
         .should('include.text', '23.52')
 })
